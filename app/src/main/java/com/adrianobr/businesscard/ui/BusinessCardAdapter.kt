@@ -13,7 +13,7 @@ import com.adrianobr.businesscard.databinding.ItemBusinessCardBinding
 class BusinessCardAdapter :
     ListAdapter<BusinessCard, BusinessCardAdapter.ViewHolder>(DiffCallback()) {
 
-    val listenerShare: (View) -> Unit = {}
+    var listenerShare: (View) -> Unit = {}
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
